@@ -1,0 +1,403 @@
+[ 2016-08-22T10:45:07+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( t_buss_okmatch ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_okmatch ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: PRAGMA table_info( t_user_openids ) [ RunTime:0.0000s ]
+SQL: SELECT t_user_openids.openid FROM t_user_openids INNER JOIN t_user on t_user_openids.user_id= t_user.id  WHERE ( t_user.okmatch_yn='Y' )  [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [2] trim() expects parameter 1 to be string, array given F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\RopSdk\rop\RopClient.php 第 127 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+
+[ 2016-08-22T10:52:57+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: PRAGMA table_info( t_buss_okmatch ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_okmatch ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: PRAGMA table_info( t_user_openids ) [ RunTime:0.0000s ]
+SQL: SELECT t_user_openids.openid FROM t_user_openids INNER JOIN t_user on t_user_openids.user_id= t_user.id  WHERE ( t_user.okmatch_yn='Y' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: open_id F:\source\self\football\sourcecode\footballman\Application\Cli\Controller\OkmatchController.class.php 第 113 行.
+NOTIC: [8] Undefined index: open_id F:\source\self\football\sourcecode\footballman\Application\Cli\Controller\OkmatchController.class.php 第 113 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+
+[ 2016-08-22T10:54:04+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: PRAGMA table_info( t_buss_okmatch ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_okmatch ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: PRAGMA table_info( t_user_openids ) [ RunTime:0.0000s ]
+SQL: SELECT t_user_openids.openid FROM t_user_openids INNER JOIN t_user on t_user_openids.user_id= t_user.id  WHERE ( t_user.okmatch_yn='Y' )  [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [2] trim() expects parameter 1 to be string, array given F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\RopSdk\rop\RopClient.php 第 127 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+
+[ 2016-08-22T10:56:16+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: PRAGMA table_info( t_buss_okmatch ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_okmatch ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( t_user_openids ) [ RunTime:0.0010s ]
+SQL: SELECT t_user_openids.openid FROM t_user_openids INNER JOIN t_user on t_user_openids.user_id= t_user.id  WHERE ( t_user.okmatch_yn='Y' )  [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+
+[ 2016-08-22T10:58:10+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( t_buss_okmatch ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_okmatch ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: PRAGMA table_info( t_user_openids ) [ RunTime:0.0000s ]
+SQL: SELECT t_user_openids.openid FROM t_user_openids INNER JOIN t_user on t_user_openids.user_id= t_user.id  WHERE ( t_user.okmatch_yn='Y' )  [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+NOTIC: [8] Array to string conversion xdebug://debug-eval 第 1 行.
+
+[ 2016-08-22T10:59:54+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( t_buss_okmatch ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_okmatch ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: PRAGMA table_info( t_user_openids ) [ RunTime:0.0000s ]
+SQL: SELECT t_user_openids.openid FROM t_user_openids INNER JOIN t_user on t_user_openids.user_id= t_user.id  WHERE ( t_user.okmatch_yn='Y' )  [ RunTime:0.0010s ]
+
+[ 2016-08-22T11:03:45+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: PRAGMA table_info( t_buss_okmatch ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_okmatch ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: PRAGMA table_info( t_user_openids ) [ RunTime:0.0000s ]
+SQL: SELECT t_user_openids.openid FROM t_user_openids INNER JOIN t_user on t_user_openids.user_id= t_user.id  WHERE ( t_user.okmatch_yn='Y' )  [ RunTime:0.0000s ]
+
+[ 2016-08-22T17:23:06+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Okmatch
+
+[ 2016-08-22T17:23:50+08:00 ] 127.0.0.1 /index.php/cli/match/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: PRAGMA table_info( t_config_okmatch ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: PRAGMA table_info( t_buss_okmatch ) [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: DELETE FROM t_buss_okmatch [ RunTime:0.0630s ]
+SQL: PRAGMA table_info( t_buss_p_alert ) [ RunTime:0.0000s ]
+SQL: DELETE FROM t_buss_p_alert WHERE create_time < '2016-08-20 17:23:26' [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '庆南' AND team_b = '首尔埃兰' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '庆南' AND team_b = '首尔埃兰' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '高阳札考罗' AND team_b = '大田市民' AND ball_sub = '0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '高阳札考罗' AND team_b = '大田市民' AND ball_sub = '0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '布迪祖怀斯U21' AND team_b = '皮尔森U21' AND ball_sub = '0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '泽伯约维卡般奴U21' AND team_b = '利巴域U21' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '密特拉库卡' AND team_b = '塞曼巴东' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '密特拉库卡' AND team_b = '塞曼巴东' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '贾布朗尼U21' AND team_b = '布拉格斯巴达U21' AND ball_sub = '0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '加拉塔沙雷U21' AND team_b = '卡拉布克士邦U21' AND ball_sub = '-1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '巴里科斯士邦U21' AND team_b = '伊斯基锡海斯普U21' AND ball_sub = '0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾宾奴列夫' AND team_b = '弗利' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = 'KTP' AND team_b = '韦斯屈莱' AND ball_sub = '0' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = 'KTP' AND team_b = '韦斯屈莱' AND ball_sub = '0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '加斯梅登' AND team_b = '博托沙尼' AND ball_sub = '0' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '加斯梅登 -角球数' AND team_b = '博托沙尼 -角球数' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '哥罗那' AND team_b = '克拉科夫' AND ball_sub = '0' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '哥罗那' AND team_b = '克拉科夫' AND ball_sub = '0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '哥罗那 -角球数' AND team_b = '克拉科夫 -角球数' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '派尔努流浪者' AND team_b = '西拉美' AND ball_sub = '1/1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾里斯' AND team_b = '卡米奥提萨' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '阿福拉哈普尔' AND team_b = '卡塔蒙耶路撒冷' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '拿撒勒伊里特夏普尔 [中]' AND team_b = '赫兹立亚马卡比' AND ball_sub = '0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '耶路撒冷夏普尔' AND team_b = '伊若尼勒谢尔' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '彼达提克瓦夏普 [中]' AND team_b = '马卡比奈坦亚' AND ball_sub = '0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '阿森纳图拉' AND team_b = '奥伦堡' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '阿森纳图拉' AND team_b = '奥伦堡' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '奥芬巴查踢球者' AND team_b = '汉诺威96' AND ball_sub = '1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '奥芬巴查踢球者' AND team_b = '汉诺威96' AND ball_sub = '0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '茨维嵪' AND team_b = '汉堡' AND ball_sub = '0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '茨维嵪' AND team_b = '汉堡' AND ball_sub = '0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '派特博恩' AND team_b = '桑德豪森' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '派特博恩' AND team_b = '桑德豪森' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '迪纳摩莫斯科' AND team_b = '莫斯科斯巴达II队' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾斯堡' AND team_b = '奥丹斯' AND ball_sub = '0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾斯堡' AND team_b = '奥丹斯' AND ball_sub = '0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object F:\source\self\football\sourcecode\footballman\Application\Cli\Controller\MatchController.class.php 第 215 行.
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾斯堡' AND team_b = '奥丹斯' AND ball_sub = '0' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾斯堡 -角球数' AND team_b = '奥丹斯 -角球数' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾夫斯堡' AND team_b = '松兹瓦尔' AND ball_sub = '-1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾夫斯堡' AND team_b = '松兹瓦尔' AND ball_sub = '-1/1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾夫斯堡' AND team_b = '松兹瓦尔' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '马模' AND team_b = '乔科平所达' AND ball_sub = '-1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '马模' AND team_b = '乔科平所达' AND ball_sub = '-1.5/2' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '马模' AND team_b = '乔科平所达' AND ball_sub = '-1/1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '艾夫斯堡 -角球数' AND team_b = '松兹瓦尔 -角球数' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '马模 -角球数' AND team_b = '乔科平所达 -角球数' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object F:\source\self\football\sourcecode\footballman\Application\Cli\Controller\MatchController.class.php 第 215 行.
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '主场 -星期一-2场赛事' AND team_b = '客场 -星期一-2场赛事' AND ball_sub = '-2.5/3' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '奧基迪' AND team_b = '卢恩斯基尔' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO t_buss_okmatch (team_a,team_b,ball_sub,p_a,p_b,game_time,create_time) VALUES ('奧基迪','卢恩斯基尔','-0.5','1.01','0.91','01:00','2016-08-22 17:23:36') [ RunTime:0.0990s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '奧基迪' AND team_b = '卢恩斯基尔' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object F:\source\self\football\sourcecode\footballman\Application\Cli\Controller\MatchController.class.php 第 215 行.
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '奧基迪' AND team_b = '卢恩斯基尔' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '咸史泰斯' AND team_b = '华保斯' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '咸史泰斯' AND team_b = '华保斯' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object F:\source\self\football\sourcecode\footballman\Application\Cli\Controller\MatchController.class.php 第 215 行.
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '咸史泰斯' AND team_b = '华保斯' AND ball_sub = '-1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '莫达伦' AND team_b = '桑德菲杰' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '韦列亚' AND team_b = '贝迪夫' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '苏黎世' AND team_b = '纳沙泰尔' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '海法马卡比' AND team_b = '夏普尔特拉维夫' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '切尔达' AND team_b = '雷加利斯' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '切尔达' AND team_b = '雷加利斯' AND ball_sub = '-1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '切尔达' AND team_b = '雷加利斯' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object F:\source\self\football\sourcecode\footballman\Application\Cli\Controller\MatchController.class.php 第 215 行.
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '切尔达' AND team_b = '雷加利斯' AND ball_sub = '-1/1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '切尔达 -角球数' AND team_b = '雷加利斯 -角球数' AND ball_sub = '-2.5/3' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object F:\source\self\football\sourcecode\footballman\Application\Cli\Controller\MatchController.class.php 第 215 行.
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '主场 -星期一-2场赛事' AND team_b = '客场 -星期一-2场赛事' AND ball_sub = '-1.5/2' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '萨拉戈萨' AND team_b = 'UCAM梅西亚' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO t_buss_okmatch (team_a,team_b,ball_sub,p_a,p_b,game_time,create_time) VALUES ('萨拉戈萨','UCAM梅西亚','-0.5','0.95','0.97','02:00','2016-08-22 17:23:43') [ RunTime:0.0360s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '萨拉戈萨' AND team_b = 'UCAM梅西亚' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '萨拉戈萨 -角球数' AND team_b = 'UCAM梅西亚 -角球数' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '丹博斯治' AND team_b = '华伦丹' AND ball_sub = '0' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '丹博斯治' AND team_b = '华伦丹' AND ball_sub = '0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '多积治' AND team_b = '比达' AND ball_sub = '0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '多积治' AND team_b = '比达' AND ball_sub = '0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '恩浩云' AND team_b = '艾切尔斯' AND ball_sub = '-1/1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '恩浩云' AND team_b = '艾切尔斯' AND ball_sub = '-1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '埃曼' AND team_b = '阿梅尔城' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '埃曼' AND team_b = '阿梅尔城' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '阿积士青年队' AND team_b = '幸运薛达' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '阿积士青年队' AND team_b = '幸运薛达' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '乌德勒支青年队' AND team_b = 'RKC华域克' AND ball_sub = '0' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '乌德勒支青年队' AND team_b = 'RKC华域克' AND ball_sub = '0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '马士积治' AND team_b = '奥斯' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '马士积治' AND team_b = '奥斯' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '金堡尔' AND team_b = '迪加史卓普' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '金堡尔' AND team_b = '迪加史卓普' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '特士达' AND team_b = '希蒙' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '特士达' AND team_b = '希蒙' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '云路' AND team_b = 'PSV燕豪芬青年队' AND ball_sub = '-1/1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '云路' AND team_b = 'PSV燕豪芬青年队' AND ball_sub = '-1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = 'ACS蒂米索拉' AND team_b = 'CS卡拉奥华大学' AND ball_sub = '1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '夏拿佐杜亚' AND team_b = '斯塔尔南' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '费基亚' AND team_b = '阿简尼斯' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '维京格' AND team_b = 'IBV韦斯文尼查' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '威姆斯' AND team_b = '红星圣欧恩' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '威姆斯' AND team_b = '红星圣欧恩' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '威姆斯 -角球数' AND team_b = '红星圣欧恩 -角球数' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '加拉塔沙雷' AND team_b = '卡拉布克士邦' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '加拉塔沙雷' AND team_b = '卡拉布克士邦' AND ball_sub = '-1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '加拉塔沙雷 -角球数' AND team_b = '卡拉布克士邦 -角球数' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '特里尔' AND team_b = '多特蒙德' AND ball_sub = '2.5/3' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '汉德尼斯佛' AND team_b = '马力恩' AND ball_sub = '-1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '巴里科斯士邦' AND team_b = '伊斯基锡海斯普' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '布拉加' AND team_b = '里奥阿维' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '布拉加' AND team_b = '里奥阿维' AND ball_sub = '-1' ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '布拉加' AND team_b = '里奥阿维' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '布拉加 -角球数' AND team_b = '里奥阿维 -角球数' AND ball_sub = '' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '波哥塔' AND team_b = '锡帕基拉老虎' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '华伦西亚' AND team_b = '拉斯彭马斯' AND ball_sub = '-0.5/1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '华伦西亚' AND team_b = '拉斯彭马斯' AND ball_sub = '-0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '华伦西亚' AND team_b = '拉斯彭马斯' AND ball_sub = '-1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Trying to get property of non-object F:\source\self\football\sourcecode\footballman\Application\Cli\Controller\MatchController.class.php 第 215 行.
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '华伦西亚' AND team_b = '拉斯彭马斯' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '华伦西亚 -角球数' AND team_b = '拉斯彭马斯 -角球数' AND ball_sub = '-1/1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '图罗杜尔' AND team_b = '华路' AND ball_sub = '1/1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '保加纳' AND team_b = '慕尼斯帕尔' AND ball_sub = '-0/0.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '哥连泰斯SP' AND team_b = '维多利亚BA' AND ball_sub = '-1/1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '哥连泰斯SP' AND team_b = '维多利亚BA' AND ball_sub = '-1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '坦迪尔 [中]' AND team_b = '小保加' AND ball_sub = '1' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_p_alert WHERE team_a = '卡利阿美利加' AND team_b = '卡利体育会' AND ball_sub = '-1.5' ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_config_okmatch LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM t_buss_okmatch ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: PRAGMA table_info( t_user_openids ) [ RunTime:0.0000s ]
+SQL: SELECT t_user_openids.openid FROM t_user_openids INNER JOIN t_user on t_user_openids.user_id= t_user.id  WHERE ( t_user.okmatch_yn='Y' )  [ RunTime:0.0220s ]
+
+[ 2016-08-22T17:24:30+08:00 ] 127.0.0.1 /index.php/cli/match/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-22T17:32:02+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Okmatch
+

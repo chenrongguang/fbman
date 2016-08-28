@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>今日足球</title>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="/Content/hg/browser.css" rel="stylesheet" />
+<script src="/bundles/core?v=VfD2NQ0V9kmtdYdzcgyFSmjSZ5HOxEwByGAKID_71hU1"></script>
+    <!--[if IE 6]>
+        <style type="text/css">
+        html    { overflow-x: hidden}
+        body    { padding-right: 1em }
+        </style>
+        <script language="javascript">
+            try {
+                document.execCommand("BackgroundImageCache", false, true);
+            } catch(err) {}
+        </script>
+    <![endif]-->
+    <!--[if IE 7]>
+        <style type="text/css">
+        .subject, .btn03, .btn05{
+            font-size:10px;
+        }
+       </style>
+    <![endif]-->
+
+    <script src="/Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/scripts/json2.js"></script>
+    <style type="text/css">
+        .ul1_wcnm {
+            margin: 0px;
+            padding: 0px;
+        }
+
+            .ul1_wcnm li {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .ul1_wcnm li {
+                float: left;
+                width: 220px;
+                line-height: 25px;
+                height: 25px;
+                list-style-type: none;
+                background-color: #fff;
+                margin: 1px 1px 0 0;
+            }
+
+        .cl {
+            clear: both;
+        }
+    </style>
+</head>
+<body style="background: #fff">
+    <table border="0" cellpadding="0" cellspacing="0" id="box">
+        <tbody>
+            <tr>
+                <td class="top">
+                    <h1><em>今日足球</em></h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="mem">
+                    <h2>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" id="fav_bar">
+                                <tbody>
+                                    <tr>
+                                        <td id="page_no">
+                                            <span id="page-desc"></span>
+                                            <select id="pages" onchange="RefreshData();"></select>
+                                        </td>
+                                        <td id="tool_td">
+                                            <table border="0" cellspacing="0" cellpadding="0" class="tool_box" style="float: right;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td id="fav_btn">
+                                                            <div id="fav_num" title="清空" onclick="chkDelAllShowLoveI();" style="display: none;">
+                                                                <!--我的最爱场数-->
+                                                                <span id="live_num"></span></div>
+                                                            <div id="showNull" title="无资料" class="fav_null" style="display: block;"></div>
+                                                            <div id="showAll" title="所有赛事" onclick="showAllGame('FT');" style="display: none;" class="fav_on"></div>
+                                                            <div id="showMy" title="我的最爱" onclick="showMyLove('FT');" class="fav_out" style="display: none;"></div>
+                                                        </td>
+                                                        <td class="refresh_btn" id="refresh_btn" onclick="this.className = 'refresh_on';">
+                                                            <!--秒数更新-->
+                                                            <div onclick="RefreshData();"><font id="refreshTime">刷新</font></div>
+                                                        </td>
+                                                        <td class="leg_btn">
+                                                            <div onclick="document.getElementById('lsDiv').className='lsDiv';" id="sel_league">选择联赛 (<span id="str_num">全部</span>)</div>
+                                                        </td>
+                                                        <td id="SortGame" class="SortGame" name="SortGame">
+                                                            <select id="SortSel" onchange="saveSortType();">
+                                                                <option value="C">按聯盟排序</option>
+                                                                <option value="T">按時間排序</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="OrderType" id="Ordertype">
+                                                            <select id="myoddType">
+                                                                <option value="H" selected="">香港盘</option>
+
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </h2>
+                    <div class="lsDiv_" id="lsDiv">
+                        <table border="0">
+                            <tr>
+                                <td width="100" align="center">
+                                    <input type="checkbox" id="selectAll" /><label for="selectAll">全选</label></td>
+                                <td>
+                                    <div onclick="document.getElementById('lsDiv').className='lsDiv_';" class="cnmlgbA">取消</div>
+                                    <div onclick="SetLianSai();" class="cnmlgbA">提交</div>
+                                </td>
+                                <td width="100" align="center"></td>
+                            </tr>
+                        </table>
+                        <ul class="ul1_wcnm" id="ul1_wcnm">
+                        </ul>
+                    </div>
+                    <div id="gameTableContent" style="display: none;">
+
+
+
+
+
+<table id="container" data-pages="3" data-timer="180" border="0" class="game" cellpadding="0" cellspacing="0">
+    <thead>
+        <tr>
+            <th width="6%">时间</th>
+            <th colspan="2">主客队伍</th>
+            <th width="8%">独赢</th>
+            <th width="12%">全场 - 让球</th>
+            <th width="15%">全场 - 大小</th>
+            <th width="6%">单双</th>
+            <th width="8%" class="lineLD">独赢</th>
+            <th width="12%">半场 - 让球</th>
+            <th width="12%">半场 - 大小</th>
+        </tr>
+    </thead>
+</table>
+<style type="text/css">
+    .test1 {background-color:#ff0;display:block;}
+</style>
+<script type="text/javascript">
+
+    parent.linshi1=parent.linshi2;
+    parent.linshi2="";
+    if (parent.linshi3 != "IndexData") {
+        parent.linshi1 = "";
+        parent.linshi3 = "IndexData";
+    }
+    var arrCok1 = parent.linshi1.split('^');
+    for(var i=0;i<arrCok1.length;i++)
+    {
+        var arrCok1a=arrCok1[i].split(',');
+        for(var j=1;j<arrCok1a.length;j++)
+        {
+            try {
+                if(document.getElementById("span_"+arrCok1a[0]+"_"+j).innerHTML!=arrCok1a[j])
+                    document.getElementById("span_"+arrCok1a[0]+"_"+j).className="test1";
+
+            } catch (e) {
+            }
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    var tabelName = "ft_ft_r";//设置表名
+</script>
+
+
+
+
+
+                    </div>
+                    <div align="center" style="line-height: 50px; background-color: #ffffff; display: none;" id="divWuShuJu">您选择的项目暂时没有赛事。请修改您的选项或迟些再返回。</div>
+
+                </td>
+            </tr>
+            <tr>
+                <td id="foot"><b>&nbsp;</b></td>
+            </tr>
+        </tbody>
+    </table>
+        <div id="refresh_down" class="refresh_M_btn" onclick=" this.className = 'refresh_M_on'; RefreshData(); "><span>刷新</span></div>
+
+    <script type="text/javascript">
+        var sTimer, timer, button, stCount;
+        var isRefreshing = false;
+        $(document).ready(function () {
+            var container = $('#container');
+            if (container.length) {
+                button = '#refreshTime';
+                stCount = timer = parseInt(container.attr('data-timer'));
+                if (timer < 1 || isNaN(timer))
+                    timer = 60;
+                button = $(button).val(timer);
+                sTimer = setInterval(function () { RefreshTimer(); }, 1000);
+                renderPageOptions();
+            }
+            setTimeout(function () {
+                refreshStyle(false);
+                $('#gameTableContent').show();
+                if (button)
+                    button.show();
+            }, 1000);
+
+            //www add
+            var tem = getRememberLianSai();
+            if(tem != "") //要进行重新刷新
+                RefreshData();
+
+        });
+
+        function refreshStyle(bOn) {
+            if (bOn) {
+                $('#refresh_btn').attr('class', 'refresh_on');
+                $('#refresh_down, #refresh_right').attr('class', 'refresh_M_on');
+            } else {
+                $('#refresh_btn').attr('class', 'refresh_btn');
+                $('#refresh_down, #refresh_right').attr('class', 'refresh_M_btn');
+            }
+        }
+
+        function RefreshTimer() {
+            if (timer <= 0) {
+                clearInterval(sTimer);
+                var pages;
+                        pages = parseInt($('#pages').attr('disabled', 'disabled').val());
+                if (isNaN(pages) || pages < 1)
+                    pages = 1;
+                var url = '/foot/indexdata/' + pages;
+                refreshStyle(true);
+                //alert(JSON.stringify(getRememberLianSai()));
+                var ls = getRememberLianSai().names;
+                //ls = ls.split("~")[2];
+                console.log(ls);
+                console.log(url);
+                $.post(url, { "ls": ls }, function (data) {
+                    setTimeout(function () {
+                        refreshStyle(false); console.log(data);
+                        $('#gameTableContent').html(data);
+                        renderPageOptions(pages);
+                       // parent.document.getElementById('mainFrame').style.height = '100%';
+                        isRefreshing = false;
+                        sTimer = setInterval(function () { RefreshTimer(); }, 1000);
+                    }, 1000);
+                }, "HTML");
+                timer = stCount;
+            }
+            else {
+                timer--;
+                if (timer == 0)
+                    button.html('更新中');
+                else
+                    button.html(timer);
+            }
+        };
+        function RefreshData() {
+            if (isRefreshing)
+                return;
+            isRefreshing = true;
+            timer = 0;
+            refreshStyle(true);
+            RefreshTimer();
+            //www add
+            changeLianSaiCount();
+        };
+        function renderPageOptions(pages) {
+
+            var ps = parseInt($('#container').attr('data-pages'));
+            if (ps > 0) {
+                $("#divWuShuJu").hide();
+            } else {
+                $("#divWuShuJu").show();
+            }
+            if (isNaN(ps) || ps <= 1) {
+                $('#pages').hide();
+                $('#page-desc').html("");
+            } else {
+                pages = pages || 1;
+                var options = '';
+                for (var i = 1; i <= ps; i++) {
+                    options += '<option value="' + i + '"';
+                    if (i == pages)
+                        options += ' selected = "selected"';
+                    options += '>' + i + '</option>';
+                }
+                $('#pages').html(options).removeAttr('disabled').show();
+                $('#page-desc').html(pages + ' / ' + ps + ' 页');
+            }
+        };
+        //联赛函数
+        function SetLianSai() {
+            i = 0;
+            var selectAll = 1;
+            var strCok = "";
+            $("#ul1_wcnm :checkbox").each(function () {
+                //alert(this.value);
+                try {
+                    if (this.checked == true) {
+                        i++;
+                        if (strCok == "") {
+                            strCok = "'" + this.value + "'";
+                        }
+                        else {
+                            strCok = strCok + "," + "'" + this.value + "'";
+                        }
+                    }
+                    else {
+                        selectAll = 0;
+                    }
+                } catch (e) {
+                }
+            });
+            //parent.divLianSaisHid = "ft_fu_index" + "~" + i + "~" + strCok;
+            if (selectAll == 0) {
+                setRememberLianSai("{\"tn\":\"" + tabelName + "\",\"lss\":\"" + i + "\",\"names\":\"" + strCok + "\"}");
+            }
+            else {
+                setRememberLianSai("");
+            }
+            $("#lsDiv").attr("class", "lsDiv_");
+            try{
+                $("#pages").get(0).options[0].selected = true;//回到第一页
+            }
+            catch(e)
+            {
+            }
+            RefreshData(); //设置完成刷新
+        }
+        function getRememberLianSai() {//获取当前联赛json,如：{"tn":"表名","lss":"联赛数","names":"联赛名称,联赛名称,联赛名称"}
+            var reStr = "";
+            var arrRe = eval(parent.divLianSaisHid);
+            for (var i = 0; i < arrRe.length; i++) {
+                if (arrRe[i].tn == tabelName) {
+                    reStr = arrRe[i];
+                }
+            }
+            return reStr;
+        }
+        function setRememberLianSai(str) {
+            var reStr = "";
+            var YesOrNo = "no";
+            var arrRe = eval(parent.divLianSaisHid);
+            for (var i = 0; i < arrRe.length; i++) {
+                if (arrRe[i].tn == tabelName) {
+                    if (reStr != "" && str!="")
+                    {
+                        reStr = reStr + ",";
+                    }
+                    reStr = reStr + str;
+                    YesOrNo = "yes";
+                }
+                else {
+                    if (reStr != "") reStr = reStr + ",";
+                    reStr = reStr + JSON.stringify(arrRe[i]);
+                }
+            }
+            if (YesOrNo == "no") {
+                reStr = reStr + "," + str;
+            }
+            parent.divLianSaisHid = "[" + reStr + "]";
+        }
+        //联赛选择数量设置
+        function changeLianSaiCount() {
+            var tem = getRememberLianSai();
+            if (tem == "") {
+                $("#str_num").text("全部");
+            }
+            else {
+                tem = eval(tem);
+                $("#str_num").text(tem.lss);
+            }
+        }
+        //载入所有联赛
+        function loadLianSai() {
+            re = new RegExp("'", "g");
+            var str = "";
+            if (getRememberLianSai() != "") {
+                str = eval(getRememberLianSai());// parent.divLianSaisHid.split("~")[2].replace("'", "")
+                str = str.names;
+                str = str.replace(re, "");
+            }
+            var ck = ("," + str + ",");
+            //alert(ck);
+            //if(ck==""){strCk="";}
+
+            var LianSaiS = "";
+            $.ajax({
+                url: "/home/gc2?tn=" + tabelName,
+                context: document.body,
+                success: function (html) {
+                    LianSaiS = html;
+                    var arrLS = LianSaiS.split(",");
+                    var tempStr = "";
+                    for (var i = 0; i < arrLS.length; i++) {
+                        var LinShiZiFuChuan = "";
+                        if (ck.replace("," + arrLS[i] + ",", "") != ck) {
+                            LinShiZiFuChuan = "<li><input type='checkbox' name='cb_" + arrLS[i] + "' id='cb_" + arrLS[i] + "' checked='1' value='" + arrLS[i] + "' /><label for='cb_" + arrLS[i] + "'>" + arrLS[i] + "</label></li>";
+                        }
+                        else {
+                            LinShiZiFuChuan = "<li><input type='checkbox' name='cb_" + arrLS[i] + "' id='cb_" + arrLS[i] + "' value='" + arrLS[i] + "' /><label for='cb_" + arrLS[i] + "'>" + arrLS[i] + "</label></li>";
+                        }
+                        if (tempStr == "") {
+                            tempStr = LinShiZiFuChuan;
+                        }
+                        else {
+                            tempStr = tempStr + LinShiZiFuChuan;
+                        }
+                    }
+                    $("#ul1_wcnm").html(tempStr + "<div class='cl'></div>");
+                },
+                error: function () {  }
+            });
+        }
+
+        $(document).ready(function () {
+            changeLianSaiCount();
+            loadLianSai();
+            //全选功能
+            $("#selectAll").click(function () {
+                if (this.checked) {
+                    $("#ul1_wcnm :checkbox").each(function () { this.checked = true; });
+                }
+                else {
+                    $("#ul1_wcnm :checkbox").each(function () { this.checked = false; });
+                }
+            });
+        });
+    </script>
+        <script src="/Scripts/jQuery.tmpl.min.js"></script>
+
+<div id="more-panel">
+    <div id="gameBoxContent">
+    </div>
+</div>
+
+<script type="text/x-jquery-tmpl" id="item-template">
+    <div class="header">
+        <a onclick="more.hide();" title="关闭" class="closed">&times;</a>
+        <b> ${team_h} VS. ${team_c} </b>
+    </div>
+    {{if ior_H1C0 > 0}}
+    <table width="100%" border="0" class="game" cellpadding="0" cellspacing="0">
+        <caption>波胆</caption>
+        <thead>
+            <tr>
+                <th width="6%" nowrap="">1:0</th>
+                <th width="6%" nowrap="">2:0</th>
+                <th width="6%" nowrap="">2:1</th>
+                <th width="6%" nowrap="">3:0</th>
+                <th width="6%" nowrap="">3:1</th>
+                <th width="6%" nowrap="">3:2</th>
+                <th width="6%" nowrap="">4:0</th>
+                <th width="6%" nowrap="">4:1</th>
+                <th width="6%" nowrap="">4:2</th>
+                <th width="6%" nowrap="">4:3</th>
+                <th width="6%" nowrap="">0:0</th>
+                <th width="6%" nowrap="">1:1</th>
+                <th width="6%" nowrap="">2:2</th>
+                <th width="6%" nowrap="">3:3</th>
+                <th width="6%" nowrap="">4:4</th>
+                <th width="10%" nowrap="">其它</th>
+            </tr>
+        </thead>
+        <tbody class="TrBgOdd">
+            <tr>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,15)"><span>${ior_H1C0}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,16)"><span>${ior_H2C0}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,17)"><span>${ior_H2C1}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,18)"><span>${ior_H3C0}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,19)"><span>${ior_H3C1}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,20)"><span>${ior_H3C2}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,21)"><span>${ior_H4C0}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,22)"><span>${ior_H4C1}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,23)"><span>${ior_H4C2}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,2,24)"><span>${ior_H4C3}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,25)"><span>${ior_H0C0}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,26)"><span>${ior_H1C1}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,27)"><span>${ior_H2C2}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,28)"><span>${ior_H3C3}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,29)"><span>${ior_H4C4}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,30)"><span>${ior_OVH}</span></a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,31)"><span>${ior_H0C1}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,32)"><span>${ior_H0C2}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,33)"><span>${ior_H1C2}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,34)"><span>${ior_H0C3}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,35)"><span>${ior_H1C3}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,36)"><span>${ior_H2C3}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,37)"><span>${ior_H0C4}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,38)"><span>${ior_H1C4}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,39)"><span>${ior_H2C4}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,2,40)"><span>${ior_H3C4}</span></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    {{/if}}
+    {{if ior_HH1C0 > 0}}
+    <table width="100%" border="0" class="game" cellpadding="0" cellspacing="0">
+        <caption>半场波胆</caption>
+        <thead>
+            <tr>
+                <th width="6%" nowrap="">1:0</th>
+                <th width="6%" nowrap="">2:0</th>
+                <th width="6%" nowrap="">2:1</th>
+                <th width="6%" nowrap="">3:0</th>
+                <th width="6%" nowrap="">3:1</th>
+                <th width="6%" nowrap="">3:2</th>
+                <th width="6%" nowrap="">0:0</th>
+                <th width="6%" nowrap="">1:1</th>
+                <th width="6%" nowrap="">2:2</th>
+                <th width="6%" nowrap="">3:3</th>
+                <th width="10%" nowrap="">其它</th>
+            </tr>
+        </thead>
+        <tbody class="TrBgOdd">
+            <tr>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,3,66)"><span>${ior_HH1C0}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,3,67)"><span>${ior_HH2C0}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,3,68)"><span>${ior_HH2C1}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,3,69)"><span>${ior_HH3C0}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,3,70)"><span>${ior_HH3C1}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,3,71)"><span>${ior_HH3C2}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,72)"><span>${ior_HH0C0}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,73)"><span>${ior_HH1C1}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,74)"><span>${ior_HH2C2}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,75)"><span>${ior_HH3C3}</span></a>
+                </td>
+                <td align="center" rowspan="2" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,76)"><span>${ior_HOVH}</span></a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,77)"><span>${ior_HH0C1}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,78)"><span>${ior_HH0C2}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,79)"><span>${ior_HH1C2}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,80)"><span>${ior_HH0C3}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,81)"><span>${ior_HH1C3}</span></a>
+                </td>
+                <td align="center" class="lineB">
+                    <a href="javascript:Sport.bet(${gid},0,3,82)"><span>${ior_HH2C3}</span></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    {{/if}}
+    {{if ior_T01 > 0}}
+    <table width="100%" border="0" class="game" cellpadding="0" cellspacing="0">
+        <caption>总入球</caption>
+        <thead>
+            <tr>
+                <th width="11%" nowrap="">0~1</th>
+                <th width="11%" nowrap="">2~3</th>
+                <th width="11%" nowrap="">4~6</th>
+                <th width="11%" nowrap="">7或以上</th>
+            </tr>
+        </thead>
+        <tbody class="TrBgOdd">
+            <tr>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,4,41)"><span>${ior_T01}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,4,42)"><span>${ior_T23}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,4,43)"><span>${ior_T46}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,4,44)"><span>${ior_OVER}</span></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    {{/if}}
+    {{if ior_FHH > 0}}
+    <table width="100%" border="0" class="game" cellpadding="0" cellspacing="0">
+        <caption>半全场</caption>
+        <thead>
+            <tr>
+                <th width="11%" nowrap="">主/主</th>
+                <th width="11%" nowrap="">主/和</th>
+                <th width="11%" nowrap="">主/客</th>
+                <th width="11%" nowrap="">和/主</th>
+                <th width="11%" nowrap="">和/和</th>
+                <th width="11%" nowrap="">和/客</th>
+                <th width="11%" nowrap="">客/主</th>
+                <th width="11%" nowrap="">客/和</th>
+                <th width="11%" nowrap="">客/客</th>
+            </tr>
+        </thead>
+        <tbody class="TrBgOdd">
+            <tr>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,5,45)"><span>${ior_FHH}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,5,46)"><span>${ior_FHN}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,5,47)"><span>${ior_FHC}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,5,48)"><span>${ior_FNH}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,5,49)"><span>${ior_FNN}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,5,50)"><span>${ior_FNC}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,5,51)"><span>${ior_FCH}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,5,52)"><span>${ior_FCN}</span></a>
+                </td>
+                <td align="center">
+                    <a href="javascript:Sport.bet(${gid},0,5,53)"><span>${ior_FCC}</span></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    {{/if}}
+</script>
+<script type="text/javascript">
+    var more = $('#more-panel');
+    function showMore(obj, gid) {
+        $('#gameBoxContent').html('');
+        ajax('/foot/more', '{rType:1, gid:' + gid + '}', function (data) {
+            if (data.IsEmpty)
+                return;
+            $('#item-template').tmpl(data).appendTo('#gameBoxContent');
+            var pos = $(obj).offset();
+            more.css({ left: 14, top: Math.max(pos.top + 17, 50) }).show();
+        });
+    };
+</script>
+    <div style="height: 30px; display: block; clear: both;">
+    </div>
+</body>
+</html>

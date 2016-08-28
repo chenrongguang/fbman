@@ -1,0 +1,332 @@
+[ 2016-08-18T10:45:05+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+ERR: Call to undefined method simple_html_dom::file_get_html()
+
+[ 2016-08-18T10:47:47+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [2] file_get_contents(find.html): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 1081 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+
+[ 2016-08-18T10:50:55+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [2] file_get_contents(find.html): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 1081 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+
+[ 2016-08-18T10:53:23+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] file_get_contents(find.html): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 1081 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+
+[ 2016-08-18T10:53:25+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-18T10:53:34+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+ERR: Call to undefined method simple_html_dom::file_get_html()
+
+[ 2016-08-18T10:58:03+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2] file_get_contents(test.html): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 75 行.
+ERR: Call to a member function find() on boolean
+
+[ 2016-08-18T10:59:14+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] file_get_contents(test.html): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 75 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+
+[ 2016-08-18T10:59:39+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] file_get_contents(find.html): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 75 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+
+[ 2016-08-18T11:01:03+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] file_get_contents(find.htm): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 75 行.
+NOTIC: [8] Use of undefined constant prefixesPsr0 - assumed 'prefixesPsr0' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+NOTIC: [8] Use of undefined constant classMap - assumed 'classMap' xdebug://debug-eval 第 1 行.
+
+[ 2016-08-18T11:02:32+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] file_get_contents(find.htm): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 75 行.
+
+[ 2016-08-18T11:02:36+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] file_get_contents(find.htm): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 1081 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026002s ]
+
+[ 2016-08-18T11:02:39+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] file_get_contents(find.htm): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 1081 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-18T11:02:40+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] file_get_contents(find.htm): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 1081 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-18T11:07:01+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] file_get_contents(find.htm): failed to open stream: No such file or directory F:\source\self\football\sourcecode\footballman\ThinkPHP\Library\Vendor\SimpleHtmlDom\simple_html_dom.php 第 1081 行.
+
+[ 2016-08-18T11:07:05+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-18T11:08:37+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-18T11:10:43+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-18T11:30:25+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-18T11:30:29+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-18T11:30:30+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-18T11:31:07+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-18T11:32:05+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-18T11:41:44+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-18T11:42:09+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-18T11:48:18+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-18T11:49:59+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-08-18T11:50:23+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-18T13:49:55+08:00 ] 127.0.0.1 /index.php/cli/okmatch/task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: Call to undefined function Cli\Controller\clearokmatch()
+

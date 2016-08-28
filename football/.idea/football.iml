@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/sourcecode/footballman/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/sourcecode/footballman/vendor/sunra/php-simple-html-dom-parser" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/sourcecode/footballman/vendor/composer" />
+          <root url="file://$MODULE_DIR$/sourcecode/footballman/vendor/sunra/php-simple-html-dom-parser" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/sourcecode/footballman/vendor/composer" />
+          <root url="file://$MODULE_DIR$/sourcecode/footballman/vendor/sunra/php-simple-html-dom-parser" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

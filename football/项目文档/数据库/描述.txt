@@ -1,0 +1,41 @@
+1.t_user --用户表
+  id,
+  name,
+  use_yn  --是否可用
+  okmatch_yn --是否需要推送符合条件的比赛
+  create_time
+2.t_user_openids --用户对应的openid表，一对多,会有多个人收到微信消息
+  id,
+  user_id,
+  openid
+3.t_buss_p_alert --赔率达到设定值之后的通知业务,以该表为基础去爬虫某场比赛
+  id,
+  user_id,--用户id
+  team_a,--队伍A
+  team_b,--队伍B
+  ball_sub,让球数
+  game_time --比赛开始时间
+  a_p_min,--team_a报警最低赔率 <=开始报警
+  a_p_max,--team_a报警最高赔率 >=开始报警
+  b_p_min,--team_b报警最低赔率 <=开始报警
+  b_p_max,--team_b报警最高赔率 >=开始报警
+  use_yn
+  create_time
+4.t_buss_okmatch  --筛选出(初步筛选，生死盘让球)合适的比赛并存储到该表，
+				  这里是爬虫定时扫描,并存储到该表
+  id,
+  team_a,
+  team_b,
+  ball_sub,
+  p_a,--赔率A
+  p_b,--赔率B
+  game_time --比赛开始时间
+  create_time,--创建时间
+  
+5.t_config_okmatch --筛选合适比赛需要用到的设置参数
+  p_sum --和数必须大于等于该值
+  p_min --最小值不能小于该值
+  task_time_start --任务不执行的开始时段，小时，例如凌晨5点不执行，则该值为5
+  task_time_end --任务不执行的结束时间，小时，例如中午14点之内不执行，则该值为14
+ 
+  

@@ -1,0 +1,7 @@
+该模块实现网页的解析，根据不同的监控内容，需要不同的解析方法
+
+足球赔率监控地址：http://mkt.hg6909.com/foot/index/1
+
+
+技术文章:
+http://www.cnphp.info/php-simple-html-dom-parser-intro.html
