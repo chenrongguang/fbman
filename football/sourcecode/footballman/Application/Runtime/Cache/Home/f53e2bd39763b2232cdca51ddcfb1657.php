@@ -88,75 +88,83 @@
     <div class="admin-content">
         <div class="admin-content-body">
             <div class="am-cf am-padding am-padding-bottom-0">
-                <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">公告管理</strong> / <small>公告新增</small></div>
+                <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">公告管理</strong> / <small>公告编辑</small></div>
             </div>
             <hr>
-        <div class="am-tabs-bd">
-            <div class="am-tab-panel am-fade am-in am-active" id="tab1">
-                <form class="am-form am-form-horizontal" method="post"  action="/home/message/addDo" name="form" id="form">
-                    <input type="hidden" name="upload_img" id="upload_img">
-                    <div class="am-form-group">
-                        <label for="user-name" class="am-u-sm-3 am-form-label">标题</label>
-                        <div class="am-u-sm-9">
-                            <input type="text" id="title" placeholder="标题" name="title">
-                            <small>输入标题。</small>
+            <div class="am-tabs-bd">
+                <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                    <form class="am-form am-form-horizontal" method="post"  action="/home/message/editDo" name="form" id="form">
+                        <input type="hidden" name="upload_img" id="upload_img">
+                        <input type="hidden" name="mess_id" id="mess_id">
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">标题</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" id="title" placeholder="标题" name="title">
+                                <small>输入标题。</small>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="am-form-group">
-                        <img src="" id="view_img" style="width:100px;height:100px;">
-                        <p>你可以使用<a href="#">gravatar.com</a>提供的头像或者使用本地上传头像。 </p>
+                        <div class="am-form-group">
+                            <img id="view_img" style="width:100px;height:100px;">
+                            <p>你可以使用<a href="#">gravatar.com</a>提供的头像或者使用本地上传头像。 </p>
                             <div class="am-u-sm-9">
                                 <input type="file" name="image_file" id="image_file" />
                             </div>
-                    </div>
-
-                    <div class="am-form-group">
-                        <div class="am-u-sm-9 am-u-sm-push-3">
-                            <button type="button" class="am-btn am-btn-primary" onclick="sub()">保存</button>
                         </div>
-                    </div>
-                </form>
 
-            </div>
-        </div>>
+                        <div class="am-form-group">
+                            <div class="am-u-sm-9 am-u-sm-push-3">
+                                <button type="button" class="am-btn am-btn-primary" onclick="sub()">保存</button>
+                            </div>
+                        </div>
+                    </form>
 
-        <footer class="admin-content-footer">
-            <hr>
-            <p class="am-padding-left">© 2016 crg.</p>
-        </footer>
+                </div>
+            </div>>
 
+            <footer class="admin-content-footer">
+                <hr>
+                <p class="am-padding-left">© 2016 crg.</p>
+            </footer>
+
+        </div>
+        <!-- content end -->
     </div>
-    <!-- content end -->
-</div>
 </div>
 
 <script type="text/javascript">
     //注意以下方法一定要把.swf文件定义对了，否则运行不了的。
     $(document).ready(function(){
-            $("#image_file").uploadify({
-                'swf': "/assets/js/uploadify.swf",
-                'formData': {SESSION_ID:"<<?php echo session_id();?>>",cid:0},
-                'uploader': "/home/public/uploadimg/",
-                'buttonText': "添加图片",
-                'buttonClass':"buttons",
-                'width':'110px',
-                'fileTypeExts': '*.gif; *.jpg; *.png',
-                'fileSizeLimit':"1MB",//正式限制
-                'onInit': function () {
-                    //$(".uploadify-queue").hide();
-                },
-                'onUploadSuccess': function (file, data, response) {
-                    var jsonData = eval('(' + data + ')');
-                    //alert(jsonData['message']);
-                    //如果上传成功
-                    if(jsonData['error']==0){
-                        //显示预览的图片，并且负责给隐藏域，点保存的时候传递到后台
-                        upload_success(jsonData['url']);
-                    }
-                },
-                'onUploadError':function (file, errorCode, errorMsg, errorString) {
+        //先赋值 ,如果是个大字符串的话，两边得加上尖括号，在可以用php的语法
+        //alert("<?php echo ($result['img_url']); ?>");
+        var url="<?php echo ($result['img_url']); ?>";
+        $('#view_img').attr('src',url);
+        $('#mess_id').val("<?php echo ($result['id']); ?>");
+        $('#title').val("<?php echo ($result['title']); ?>");
+
+        $("#image_file").uploadify({
+            'swf': "/assets/js/uploadify.swf",
+            'formData': {SESSION_ID:"<<?php echo session_id();?>>",cid:0},
+            'uploader': "/home/public/uploadimg/",
+            'buttonText': "添加图片",
+            'buttonClass':"buttons",
+            'width':'110px',
+            'fileTypeExts': '*.gif; *.jpg; *.png',
+            'fileSizeLimit':"1MB",//正式限制
+            'onInit': function () {
+                //$(".uploadify-queue").hide();
+            },
+            'onUploadSuccess': function (file, data, response) {
+                var jsonData = eval('(' + data + ')');
+                //alert(jsonData['message']);
+                //如果上传成功
+                if(jsonData['error']==0){
+                    //显示预览的图片，并且负责给隐藏域，点保存的时候传递到后台
+                    upload_success(jsonData['url']);
                 }
+            },
+            'onUploadError':function (file, errorCode, errorMsg, errorString) {
+            }
         });
     });
 

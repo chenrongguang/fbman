@@ -46,7 +46,7 @@ class PublicController extends BaseController  {
             $info['Filedata']['view_url'] = C('UPLOAD_SERVER_URL') . $info['Filedata']['savepath'] . $info['Filedata']['savename']; //预览url
             $info['Filedata']['view_path'] = $info['Filedata']['view_url']; //预览路径
 
-            $mag = array('error' => false, 'message' => '上传成功', 'inc_ids' => null, 'type' => 'append', 'url' => $info['Filedata']['view_url']);
+            $mag = array('error' => false, 'message' => '上传成功',  'url' => $info['Filedata']['view_url']);
 
             $mag['error'] = 0;
         }

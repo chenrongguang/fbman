@@ -21,3 +21,30 @@ function clickOne() {
         $(".checkAll").prop("checked", false);
     }
 }
+
+//提交
+function subform(){
+
+    var ajax_info = {
+        success: function(data){
+            return_handle(data);
+        },
+        resetForm: false,
+        dataType: 'json'
+    };
+
+    $("#form").ajaxSubmit(ajax_info);
+}
+
+//处理返回
+function return_handle(data)
+{
+    if(data.result=='SUCCESS'){
+        location.href= data.return_data.url;
+    }
+    else{
+        alert(data.msg);
+    }
+
+}
+

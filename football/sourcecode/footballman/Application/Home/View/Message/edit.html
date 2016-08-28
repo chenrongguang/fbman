@@ -1,10 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="/assets/css/amazeui.min.css"/>
+    <!--注意以下目录的写法，由于目前assets目录放在了和index.php的同级目录下，所以以下的写法是没有问题的-->
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <!--该样式表用于分页-->
+    <link rel="stylesheet" href="/assets/css/pagination.css">
+    <script type="text/javascript" src="/assets/js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.uploadify.min.js?id=2"></script>
+    <script type="text/javascript" src="/assets/js/jquery.form.min.js"></script>
 </head>
 <body>
+<div>
+    <!--在模板里边只需要用以下语句就可以了，并且用了冒号的方式，具体的用法可以查询thinkphp对于模板中include的用法-->
+    <include file ='Public:header' />
+</div>
+<div class="am-cf admin-main">
+    <include file ='Public:menu' />
+
+    <!-- content start -->
+    <div class="admin-content">
+        <div class="admin-content-body">
+            <div class="am-cf am-padding am-padding-bottom-0">
+                <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">公告管理</strong> / <small>公告编辑</small></div>
+            </div>
+            <hr>
+            <div class="am-tabs-bd">
+                <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                    <form class="am-form am-form-horizontal" method="post"  action="/home/message/editDo" name="form" id="form">
+                        <input type="hidden" name="upload_img" id="upload_img">
+                        <input type="hidden" name="mess_id" id="mess_id">
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">标题</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" id="title" placeholder="标题" name="title">
+                                <small>输入标题。</small>
+                            </div>
+                        </div>
+
+                        <div class="am-form-group">
+                            <img id="view_img" style="width:100px;height:100px;">
+                            <p>你可以使用<a href="#">gravatar.com</a>提供的头像或者使用本地上传头像。 </p>
+                            <div class="am-u-sm-9">
+                                <input type="file" name="image_file" id="image_file" />
+                            </div>
+                        </div>
+
+                        <div class="am-form-group">
+                            <div class="am-u-sm-9 am-u-sm-push-3">
+                                <button type="button" class="am-btn am-btn-primary" onclick="sub()">保存</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>>
+
+            <footer class="admin-content-footer">
+                <hr>
+                <p class="am-padding-left">© 2016 crg.</p>
+            </footer>
+
+        </div>
+        <!-- content end -->
+    </div>
+</div>
+
+<script type="text/javascript">
+    //注意以下方法一定要把.swf文件定义对了，否则运行不了的。
+    $(document).ready(function(){
+        //先赋值 ,如果是个大字符串的话，两边得加上尖括号，在可以用php的语法
+        //alert("{$result['img_url']}");
+        var url="{$result['img_url']}";
+        $('#view_img').attr('src',url);
+        $('#mess_id').val("{$result['id']}");
+        $('#title').val("{$result['title']}");
+
+        $("#image_file").uploadify({
+            'swf': "/assets/js/uploadify.swf",
+            'formData': {SESSION_ID:"<{:session_id()}>",cid:0},
+            'uploader': "/home/public/uploadimg/",
+            'buttonText': "添加图片",
+            'buttonClass':"buttons",
+            'width':'110px',
+            'fileTypeExts': '*.gif; *.jpg; *.png',
+            'fileSizeLimit':"1MB",//正式限制
+            'onInit': function () {
+                //$(".uploadify-queue").hide();
+            },
+            'onUploadSuccess': function (file, data, response) {
+                var jsonData = eval('(' + data + ')');
+                //alert(jsonData['message']);
+                //如果上传成功
+                if(jsonData['error']==0){
+                    //显示预览的图片，并且负责给隐藏域，点保存的时候传递到后台
+                    upload_success(jsonData['url']);
+                }
+            },
+            'onUploadError':function (file, errorCode, errorMsg, errorString) {
+            }
+        });
+    });
+
+    function upload_success(view_url){
+        $('#upload_img').val(view_url);
+        $('#view_img').attr('src',view_url);
+    }
+
+    function validate_handle(){
+        //todo
+        return true;
+
+    }
+
+    function sub()
+    {
+        //检查和校验处理
+        if(false== validate_handle()){
+            return;
+        }
+
+        subform();
+    }
+
+</script>
 
 </body>
 </html>

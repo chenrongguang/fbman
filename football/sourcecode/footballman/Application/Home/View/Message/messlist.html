@@ -80,7 +80,7 @@
                                             <div class="am-btn-group am-btn-group-xs">
                                                 <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
                                                 <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
-                                                <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only" onclick="_del('{$vo.id}')"><span class="am-icon-trash-o"></span> 删除</button>
                                             </div>
                                         </div>
                                     </td>
@@ -129,6 +129,27 @@
     //新增
     function _add(){
         window.location.href = "/home/message/add";
+    }
+
+    function _del(id){
+        //alert(id);
+        $.ajax({
+            type : "post",
+            url : '/home/message/delDo',
+            data : JSON.stringify({messid:id}),
+            async : false,
+            success : function(data){
+                return_handle(data);
+                /*
+                if(data.result=='SUCCESS'){
+                    location.href= data.return_data.url;
+                }else{
+                    alert(data.return_msg);
+                }
+                */
+            }
+        });
+
     }
 
 </script>

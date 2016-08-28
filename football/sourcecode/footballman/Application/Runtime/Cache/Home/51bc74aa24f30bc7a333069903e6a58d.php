@@ -13,6 +13,7 @@
     <script type="text/javascript" src="/assets/js/jquery-3.0.0.min.js"></script>
     <!--注意如果们需要使用以下的ajaxSubmit就必须单独引入这个-->
     <script type="text/javascript" src="/assets/js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
     <style>
         .header {
             text-align: center;
@@ -84,6 +85,9 @@
             return;
         }
 
+        subform();
+
+        /*
         var ajax_info = {
             success: function(data){
                 return_handle(data);
@@ -93,8 +97,10 @@
         };
 
         $("#form").ajaxSubmit(ajax_info);
+        */
     }
 
+    /*
     function return_handle(data)
     {
         if(data.result=='SUCCESS'){
@@ -106,6 +112,7 @@
         }
 
     }
+    */
 </script>
 </body>
 </html>
