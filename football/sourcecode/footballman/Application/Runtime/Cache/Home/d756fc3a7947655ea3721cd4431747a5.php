@@ -94,7 +94,7 @@
                     <div class="am-btn-toolbar">
                         <div class="am-btn-group am-btn-group-xs">
                             <button type="button" class="am-btn am-btn-default" onclick="_add();"><span class="am-icon-plus" ></span> 新增</button>
-                            <button type="button" class="am-btn am-btn-default"><span class="am-icon-trash-o"></span> 删除</button>
+                            <button type="button" class="am-btn am-btn-default" onclick="_richtext();"><span class="am-icon-trash-o"></span> 富文本编辑器</button>
                         </div>
                     </div>
                 </div>
@@ -178,6 +178,12 @@
     function _add(){
         window.location.href = "/home/message/add";
     }
+
+    //富文本编辑器开发
+    function _richtext(){
+        window.location.href = "/home/message/richtext";
+    }
+
 
     function _del(id){
         //alert(id);

@@ -127,5 +127,15 @@ class MessageController extends BaseController  {
         }
     }
 
+    //富文本编辑器
+    public  function richtext(){
+        $this->display();
+    }
+
+    //富文本编辑器保存
+    public  function richtextDo(){
+        $this->display();
+    }
+
 
 }

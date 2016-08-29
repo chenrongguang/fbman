@@ -1,0 +1,12 @@
+[ 2016-08-29T11:54:29+08:00 ] 127.0.0.1 /assets/js/php/controller.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Assets
+
+[ 2016-08-29T14:28:25+08:00 ] 127.0.0.1 /assets/img/res/selectBtn.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Assets
+

@@ -87,32 +87,7 @@
 
         subform();
 
-        /*
-        var ajax_info = {
-            success: function(data){
-                return_handle(data);
-            },
-            resetForm: false,
-            dataType: 'json'
-        };
-
-        $("#form").ajaxSubmit(ajax_info);
-        */
     }
-
-    /*
-    function return_handle(data)
-    {
-        if(data.result=='SUCCESS'){
-           location.href= data.return_data.url;
-        }
-        else{
-            alert(data.msg);
-            $('#password').val('');
-        }
-
-    }
-    */
 </script>
 </body>
 </html>
