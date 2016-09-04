@@ -1,14 +1,24 @@
 /****  文字大小初始化,使1em=10px *****/
 /* 分页的样式控制 */
-body {font-size:62.5%;}/* for IE/Win */
-html>body {font-size:14px;} /* for everything else */
+
+/*body {font-size:62.5%;}*//* for IE/Win */
+/*html>body {font-size:14px;}*/ /* for everything else */
 /*字体边框等初始化*/
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
-  padding: 0;margin: 0;font-size:12px;font-family:微软雅黑,宋体, 新宋体, Arial,"Times New Roman",  Fixedsys;}
+/*
+
 table {border-collapse: collapse;border-spacing: 0;}
 fieldset,img {border: 0;}
 address,caption,cite,code,dfn,th,var {font-weight: normal;font-style: normal;}
+*/
+
+/*
 ol,ul {list-style: none;}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  padding: 0;margin: 0;font-size:12px;font-family:微软雅黑,宋体, 新宋体, Arial,"Times New Roman",  Fixedsys;}
+*/
+/*
+
 caption,th {}
 h1,h2,h3,h4,h5,h6 {font-weight: normal;font-size: 100%;}
 q:before,q:after {content:'';}
@@ -17,6 +27,14 @@ a {text-decoration:none;}
 
 input[type=text],textarea{line-height:16px;padding:2px 6px;}
 select {border:solid 1px #c8cccf;height:28px!important;}
+*/
+
+
+.pagination div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  padding: 0;margin: 0;font-size:12px;font-family:微软雅黑,宋体, 新宋体, Arial,"Times New Roman",  Fixedsys;}
+  
+.pagination ol,ul {list-style: none;}
+
 .pagination {width:100%; overflow:hidden;}
 .pagination li {float:left; line-height:22px; padding-right:10px;}
 .pagination a.l-btn {float:left;opacity:1!important;padding: 0;}
