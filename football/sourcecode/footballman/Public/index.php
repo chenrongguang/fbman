@@ -19,7 +19,7 @@ define('APP_DEBUG',True);
 define('APP_PATH','../Application/');
 
 //require __DIR__ . '/../vendor/autoload.php';
-require '../vendor/autoload.php';
+//require '../vendor/autoload.php';
 // 引入ThinkPHP入口文件
 require '../ThinkPHP/ThinkPHP.php';
 

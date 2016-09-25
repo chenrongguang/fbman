@@ -242,6 +242,7 @@ class MatchController extends Controller {
                 if (empty($ball_sub)){
                     //客队让球加“+”号
                     $ball_sub = $children[$td_index]->find('div', 0)->find('span', 1)->innertext;
+                    $ball_sub='+'.$ball_sub;
                 }
                 else{
                     //主队让球加“-”号

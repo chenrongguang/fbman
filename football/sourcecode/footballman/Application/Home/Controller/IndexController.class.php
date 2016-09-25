@@ -41,6 +41,16 @@ body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px}
         */
     }
 
+
+    public function  testLog(){
+
+        \Think::Log.write('test');
+    }
+
+    public function phpinfo(){
+        echo phpinfo();
+    }
+
     //测试发送邮件
     /*
      *最终的测试结果是，在发送给某些邮件的时候会报错，但是有些邮箱又没有问题

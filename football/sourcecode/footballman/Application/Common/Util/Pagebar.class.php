@@ -235,41 +235,16 @@ EOD;
                     </select>
                 </div>
                 </li>
-                <!--<td>
-                    <div class="pagination-btn-separator"></div>
-                </td>
-                <td>
-                    {$firstRow}
-                </td>-->
                 <li>
                     {$upPage}
                 </li>
-                <!--<td>
-                    <div class="pagination-btn-separator"></div>
-                </td>-->
-                <!--<td>
-                    <span style="padding-right:6px;">页,</span>
-                </td>
-                <td>
-                    <span style="padding-right:6px;">共{$this->totalPages}页</span>
-                </td>-->
+
                 <li>
                     <span class="font">{$this->nowPage}/{$this->totalPages}</span>
                 </li>
-                <!--<td>
-                    <div class="pagination-btn-separator"></div>
-                </td>-->
                 <li>
                     {$downPage}
                 </li>
-                <!--
-                <li>
-                    <span class="font">第</span><input class="pagination-num" value="{$this->nowPage}" size="2" type="text"><span class="font">页</span>
-                </li>
-                -->
-                <!--<td>
-                    {$lastRow}
-                </td>-->
             </ul>
     <div class="pagination-info">显示 {$start} 到 {$end},共 {$this->totalRows} 记录</div>
     <div style="clear:both;"></div>
